@@ -1,0 +1,19 @@
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            dataGridView1.CellClick += dataGridViewSoftware_CellClick;
+        }
+        
+        Write this code somewhere in handlers
+        
+          DataGridViewButtonColumn delBtn = new DataGridViewButtonColumn();
+          //delBtn.Name = "btnDel";
+          //delBtn.Text = "Удалить";
+          dataGridView1.Rows.Add(name, delBtn);
+          
+        private void dataGridViewSoftware_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.ColumnIndex == dataGridView1.Columns["Column2"].Index && dataGridView1.Rows.Count != e.RowIndex + 1)
+            {
+                dataGridView1.Rows.RemoveAt(e.RowIndex);
+            }
+        }
