@@ -12,3 +12,8 @@
 
 Дополнительно: 
 - https://tproger.ru/digest/competitive-programming-practice/
+
+
+ASP.NET
+1) https://docs.microsoft.com/en-us/aspnet/mvc/overview/getting-started/introduction/getting-started
+2) http://www.tutorialsteacher.com/mvc/create-first-asp.net-mvc-application
